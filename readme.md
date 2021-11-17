@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/h68hqpq2my8tew20?svg=true)](https://ci.appveyor.com/project/AnastMast/selenide)
