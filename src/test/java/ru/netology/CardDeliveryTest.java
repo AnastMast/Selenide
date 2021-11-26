@@ -1,8 +1,5 @@
 package ru.netology;
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selectors;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
@@ -17,15 +14,9 @@ import static com.codeborne.selenide.Selenide.*;
 
 
 public class CardDeliveryTest {
-    @BeforeAll
-    static void setUpAll() {
-//            System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
-        WebDriverManager.chromedriver().setup();
-    }
 
     @BeforeEach
-    void setUp() {
-        Configuration.browser = "chrome";
+    public void setUp() {
         open("http://localhost:9999");
     }
         public LocalDate getDateOfMeetingInLocalDate(int days) {
